@@ -1,271 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Document</title>
-    
+    <title>Fresh Market - Quality Grocery Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="d-flex border border-white" >
-        <div class=" me-xl-4 border border-gray" >
-            <a class="navbar-brand mx-lg-4" href="#">
-                <svg style="margin-top: 23px;" width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
-                        fill="#F8CB46"></path>
-                    <path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path>
-                    <path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path>
-                    <path
-                        d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
-                        fill="#F8CB46"></path>
-                    <path
-                        d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
-                        fill="#F8CB46"></path>
-                    <path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path>
-                    <path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path>
-                    <path
-                        d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
-                        fill="#54B226"></path>
-                    <path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path>
-                </svg>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="delivery-info">
+                    <span class="delivery-badge">🚚 Delivery in 13 minutes</span>
+                    <span class="location">📍 Your Address</span>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-login">Login</button>
+                    <button class="btn-cart">🛒 Cart (0)</button>
+                </div>
+            </div>
 
-                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRmmFxiyvgfqdHUfTV_Yy1kixxiIAdZo3Tug&usqp=CAU"
-                    alt="Logo" width="150" height="80" class="d-inline-block align-text-top"> -->
-            </a>
-        </div>
-        <div class="p-2 mt-2 me-5 ">
-            <h6><b>Delivery in 13minutes</b></h6>
-            <p>address...</p>
-        </div>
-        <div class="input-group w-50  mt-4 mb-lg-4">
-            <span class="input-group-text" id="basic-addon1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                    height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg></span>
-            <input type="text" class="form-control" placeholder="Search" aria-label="Username"
-                aria-describedby="basic-addon1">
-        </div>
-        <div class="mt-md-3 m-lg-4 ">
-            <button type="button" class="btn p-2 fs-5 mx-1 me-md-5">Login</button>
-            <button type="button" class="btn p-2 btn btn-success fs-6">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2 "
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                </svg>
-                My cart</button>
-        </div>
-    </div>
-
-    <!-- Image -->
-    <div class="card border-0 " style="display: flex; justify-content: center; align-items: center;">
-        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=1440/layout-engine/2022-05/Group-33704.jpg"
-            class="card-img me-2" alt="..." style="margin-left: 0px; width:85vw; height: 40vh;">
-    </div>
-    <div class="container-fluid scroll" style="display: flex;justify-content: center; align-items: center; width: 83vw; overflow-x: auto; ">
-        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-03/beauty-WEB.jpg"
-            width="29%" style="padding: 10px;">
-        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/electronics-WEB.jpg"
-            width="29%" style="padding: 10px;">
-        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg"
-            width="29%" style="padding: 10px;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/mango-WEB-1.png"width="29%" style="padding: 10px;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/staples-WEB.jpg
-            "width="29%" style="padding: 10px;">
-
-    </div>
-    <div class="d-flex flex-wrap" style="margin-left: 7.5%;">
-        <!-- <div class="card" style="width: 8rem;"> -->
-        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-12/paan-corner_web.png"
-            class="" alt="..." style="width: 8rem;"></a>
-        <a> <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-2_10.png"
-                class="" alt="..." style="width: 8rem;"></a>
-        <a> <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png"
-                class="" alt="..." style="width: 8rem;"></a>
-        <a> <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-4_9.png"
-                class="" alt="..." style="width: 8rem;"></a>
-        <a> <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png"
-                class="" alt="..." style="width: 8rem;"></a>
-        <a> <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-6_5.png"
-                class="" alt="..." style="width: 8rem;"></a>
-        <a> <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png"
-                class="" alt="..." style="width: 8rem;"></a>
-        <a> <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-8_4.png"
-                class="" alt="..." style="width: 8rem;"></a>
-        <a> <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-9_3.png"
-                class="" alt="..." style="width: 8rem;"></a>
-        <a> <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-10.png"
-                class="" alt="..." style="width: 8rem;"></a><br></br>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-11.png"
-                alt="..." style="width: 8rem;"></a>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-12.png"
-                alt="..." style="width: 8rem;"></a>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-13.png"
-                alt="..." style="width: 8rem;"></a>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-14.png"
-                alt="..." style="width: 8rem;"></a>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-15.png"
-                alt="..." style="width: 8rem;"></a>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-16.png"
-                alt="..." style="width: 8rem;"></a>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-17.png"
-                alt="..." style="width: 8rem;"></a>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-18.png"
-                alt="..." style="width: 8rem;"></a>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-19.png"
-                alt="..." style="width: 8rem;"></a>
-        <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-20.png"
-                alt="..." style="width: 8rem;"></a>
-        <!-- <a><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-21.png"  alt="..." style="width: 8rem;margin: 0px;"></a>  -->
-    </div>
-    <div style="margin-left: 7.5%;">
-        <div style="display: flex; margin-bottom: 10px;">
-        <h4><b>Dairy, Bread & Eggs </b></h4>
-        <h5 style="margin-left: 959px;"><a href="#" style="text-decoration: none;">see all</a></h5></div>
-        <div style="display: flex;">
-        <div class="card" style="width: 11rem; margin-right: 15px;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/86446a.jpg?ts=1641540332" alt="" width="100%" >
-            <div style="margin-top: -20px; margin-bottom: 10px;margin-left: 12px;"><span style="background-color: gainsboro; border-radius: 10%; padding: 5px; font-size: small;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
-                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
-                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
-              </svg>
-              <small>13 MINS</small></span></div>
-            <h6 style="margin-left: 12px;">Amul Taaza Toned Fresh Milk</h6>
-            <p style="margin-left: 12px; font-weight: 300;">500 ml</p>
-            <div style="margin-left: 12px; display: flex; margin-top: -15px; margin-bottom: 10px;">
-                <p style="font-weight: 600;">&#8377; 27</p>
-                <button style="margin-left: 40%;width: 4vw; font-weight: 600; color: green; border: 1px solid green; border-radius: 5px;">ADD</button>
+            <div class="header-bottom">
+                <h1 class="logo">Fresh Market</h1>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">Categories</a>
+                    <a href="#" class="nav-link">Deals</a>
+                    <a href="#" class="nav-link">About</a>
+                </nav>
+                <button class="menu-toggle">☰</button>
             </div>
         </div>
-        <!-- 2nd -->
-        <div class="card" style="width: 11rem;margin-right: 15px;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/10491a.jpg" alt="" width="100%" >
-            <div style="margin-top: -20px; margin-bottom: 10px;margin-left: 12px;"><span style="background-color: gainsboro; border-radius: 10%; padding: 5px; font-size: small;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
-                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
-                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
-              </svg>
-              <small>13 MINS</small></span></div>
-            <h6 style="margin-left: 12px;">Nestle Milkmaid Bar Test the Best</h6>
-            <p style="margin-left: 12px; font-weight: 300;">400 g</p>
-            <div style="margin-left: 12px; display: flex; margin-top: -15px; margin-bottom: 10px;">
-                <p style="font-weight: 600;">&#8377; 90</p>
-                <button style="margin-left: 40%;width: 4vw; font-weight: 600; color: green; border: 1px solid green; border-radius: 5px;">ADD</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Fresh Groceries Delivered Fast</h2>
+                <p>Get farm-fresh produce and daily essentials delivered to your doorstep in just 13 minutes</p>
+                <button class="btn-primary">Start Shopping</button>
             </div>
         </div>
-        <!-- 3rd -->
-        <div class="card" style="width: 11rem;margin-right: 15px;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/483705a.jpg?ts=1657805510" alt="" width="100%" >
-            <div style="margin-top: -20px; margin-bottom: 10px;margin-left: 12px;"><span style="background-color: gainsboro; border-radius: 10%; padding: 5px; font-size: small;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
-                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
-                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
-              </svg>
-              <small>13 MINS</small></span></div>
-            <h6 style="margin-left: 12px;">Fresh Egges Carret arount 30pic</h6>
-            <p style="margin-left: 12px; font-weight: 300;">400 g</p>
-            <div style="margin-left: 12px; display: flex; margin-top: -15px; margin-bottom: 10px;">
-                <p style="font-weight: 600;">&#8377; 50</p>
-                <button style="margin-left: 40%;width: 4vw; font-weight: 600; color: green; border: 1px solid green; border-radius: 5px;">ADD</button>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h3 class="section-title">Shop by Category</h3>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">🥛</div>
+                    <h4>Dairy & Eggs</h4>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍞</div>
+                    <h4>Bread & Bakery</h4>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥬</div>
+                    <h4>Vegetables</h4>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍎</div>
+                    <h4>Fruits</h4>
+                </div>
             </div>
         </div>
-        <!-- 4th -->
-        <div class="card" style="width: 11rem;margin-right: 15px;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/24194a.jpg?ts=1661157751" alt="" width="100%" >
-            <div style="margin-top: -20px; margin-bottom: 10px;margin-left: 12px;"><span style="background-color: gainsboro; border-radius: 10%; padding: 5px; font-size: small;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
-                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
-                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
-              </svg>
-              <small>13 MINS</small></span></div>
-            <h6 style="margin-left: 12px;">Britannia 100% Whole Wheat Bread</h6>
-            <p style="margin-left: 12px; font-weight: 300;">500 ml</p>
-            <div style="margin-left: 12px; display: flex; margin-top: -15px; margin-bottom: 10px;">
-                <p style="font-weight: 600;">&#8377; 50</p>
-                <button style="margin-left: 40%;width: 4vw; font-weight: 600; color: green; border: 1px solid green; border-radius: 5px;">ADD</button>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Dairy, Bread & Eggs</h3>
+                <a href="#" class="see-all">See All →</a>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="delivery-time">13 MINS</span>
+                        <div class="placeholder">🥛</div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Amul Taaza Toned Fresh Milk</h4>
+                        <p class="product-size">500 ml</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹27</span>
+                            <button class="btn-add">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="delivery-time">13 MINS</span>
+                        <div class="placeholder">🍫</div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Nestle Milkmaid Bar</h4>
+                        <p class="product-size">400 g</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹90</span>
+                            <button class="btn-add">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="delivery-time">13 MINS</span>
+                        <div class="placeholder">🥚</div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Fresh Eggs - 30 Piece Carton</h4>
+                        <p class="product-size">1.5 kg</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹50</span>
+                            <button class="btn-add">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="delivery-time">13 MINS</span>
+                        <div class="placeholder">🍞</div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Britannia 100% Whole Wheat Bread</h4>
+                        <p class="product-size">500 g</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹50</span>
+                            <button class="btn-add">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="delivery-time">13 MINS</span>
+                        <div class="placeholder">🧀</div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Amul Fresh Chopped Paneer</h4>
+                        <p class="product-size">200 g</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹70</span>
+                            <button class="btn-add">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="delivery-time">13 MINS</span>
+                        <div class="placeholder">🧈</div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Amul Fresh Salted Butter</h4>
+                        <p class="product-size">100 g</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹90</span>
+                            <button class="btn-add">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="delivery-time">13 MINS</span>
+                        <div class="placeholder">🥣</div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Amul Fresh Masti Curd</h4>
+                        <p class="product-size">400 g</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹37</span>
+                            <button class="btn-add">ADD</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- 5th -->
-        <div class="card" style="width: 11rem;margin-right: 15px;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/192a.jpg?ts=1644908944" alt="" width="100%" >
-            <div style="margin-top: -20px; margin-bottom: 10px;margin-left: 12px;"><span style="background-color: gainsboro; border-radius: 10%; padding: 5px; font-size: small;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
-                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
-                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
-              </svg>
-              <small>13 MINS</small></span></div>
-            <h6 style="margin-left: 12px;">Amul Fresh Choped Panner</h6>
-            <p style="margin-left: 12px; font-weight: 300;">500 ml</p>
-            <div style="margin-left: 12px; display: flex; margin-top: -15px; margin-bottom: 10px;">
-                <p style="font-weight: 600;">&#8377; 70</p>
-                <button style="margin-left: 40%;width: 4vw; font-weight: 600; color: green; border: 1px solid green; border-radius: 5px;">ADD</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fresh Market</h4>
+                    <p>Your trusted grocery delivery partner. Fresh, fast, and reliable.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fresh Market. All rights reserved.</p>
             </div>
         </div>
-        <!-- 6th -->
-        <div class="card" style="width: 11rem;margin-right: 15px;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/160a.jpg?ts=1654778815" alt="" width="100%" >
-            <div style="margin-top: -20px; margin-bottom: 10px;margin-left: 12px;"><span style="background-color: gainsboro; border-radius: 10%; padding: 5px; font-size: small;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
-                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
-                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
-              </svg>
-              <small>13 MINS</small></span></div>
-            <h6 style="margin-left: 12px;">Amul Fresh Salted Butter</h6>
-            <p style="margin-left: 12px; font-weight: 300;">500 ml</p>
-            <div style="margin-left: 12px; display: flex; margin-top: -15px; margin-bottom: 10px;">
-                <p style="font-weight: 600;">&#8377; 90</p>
-                <button style="margin-left: 40%;width: 4vw; font-weight: 600; color: green; border: 1px solid green; border-radius: 5px;">ADD</button>
-            </div>
-        </div>
-        <!-- 7th -->
-        <div class="card" style="width: 11rem;margin-right: 15px;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/45533a.jpg?ts=1654845569" alt="" width="100%" >
-            <div style="margin-top: -20px; margin-bottom: 10px;margin-left: 12px;"><span style="background-color: gainsboro; border-radius: 10%; padding: 5px; font-size: small;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
-                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
-                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
-              </svg>
-              <small>13 MINS</small></span></div>
-            <h6 style="margin-left: 12px;">Amul Fresh Masti Curd</h6>
-            <p style="margin-left: 12px; font-weight: 300;">400 g</p>
-            <div style="margin-left: 12px; display: flex; margin-top: -15px; margin-bottom: 10px;">
-                <p style="font-weight: 600;">&#8377; 37</p>
-                <button style="margin-left: 40%;width: 4vw; font-weight: 600; color: green; border: 1px solid green; border-radius: 5px;">ADD</button>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div style="text-align: center; justify-content: center; margin-top: 40px; font-weight: 600; font-size: 30px;">
-        Thank You So much
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="25" fill="currentColor" class="bi bi-balloon-heart-fill " viewBox="0 0 16 16" style=" color: red; margin-bottom:40px">
-            <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
-          </svg>
-    </div>
+    </footer>
 
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
